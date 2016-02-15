@@ -1,36 +1,64 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-	<title>First Homework</title>
-	<link rel="stylesheet" type="text/css" href="Style/My_CSS.css">
-</head>
-<body>
-	<header>
-	    	<h1>Page Header</h1>
-	    	<h4>I love HTML5!</h4>     
-	</header>
-	<div class="content">
-	    <div class="sidebar left">
-	    <center><h5>Navigation Bar</h5></center>
-	       <nav>
-		       <a href="url">Link text</a><br/>
-		       <hr>
-		       <a href="url">Link text</a><br/>
-		       <hr>
-		       <a href="url">Link text</a><br/>
-		       <hr>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>HTML&CSS</title>
+  <link rel="stylesheet" type="text/css" href="Style/My_CSS.css">
+ </head>
 
-	       </nav>
-	    </div>
-	    <div > </div>
-	    <div class="sidebar right">
-	    	<img src="pic.png">
-	    </div>
-	</div>
-	<footer>
-	    <h1>Page Footer</h1>
-	</footer>
+ <body>
+  <div class="header">
+    <h1>Page Header</h1>
+    <h4>I love HTML5!</h4>  
+  </div>
 
-</body>
+  <div class="layout">
+
+    <div class="col1">
+      <center>
+        <h3>Navigation Bar</h3>
+      </center>
+      <nav>
+        <a href="url">Link text</a><br/>
+        <hr>
+        <a href="url">Link text</a><br/>
+        <hr>
+        <a href="url">Link text</a><br/>
+        <hr>
+      </nav>
+    </div>
+
+    <div class="col3">
+      <figure>
+        <img src="pic.png" alt="" />
+        <figcaption>figcaption</figcaption>
+      </figure>
+    </div>
+
+   <div class="col2">
+     <article>
+       <div class="acticle_header"><h3>Article Header</h3></div>
+       <p>
+          Firefox полностью поддерживает этот тег начиная с версии 4.0, 
+          но версии 3.0 и старше также корректно отображают содержимое тега.
+       </p>
+       <div class="acticle_footer"><h3>Article Footer</h3></div>
+     </article>
+
+     <div class="border"></div>
+
+     <article>
+       <div class="acticle_header"><h3>Article Header</h3></div>
+       <p>
+          Firefox полностью поддерживает этот тег начиная с версии 4.0, 
+          но версии 3.0 и старше также корректно отображают содержимое тега.
+       </p>
+       <div class="acticle_footer"><h3>Article Footer</h3></div>
+     </article>
+    </div>
+  </div>
+
+  <div class="footer">
+    <h1>Page Footer</h1>
+  </div>
+ </body>
 </html>
