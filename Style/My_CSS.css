@@ -1,61 +1,80 @@
-.header, .acticle_header { background: #551F73; }
-.footer, .acticle_footer { background: #1E516D; }
-.header, .acticle_header,.footer, .acticle_footer {color: #EAEA7B;}
+/*HEADERS&FOOTERS*/
 
-.footer{
+header{ background: #551F73; }
+footer{ background: #1E516D; }
+header,footer{ color: #EAEA7B;}
+
+body > footer{
     height: 100px;
 }
+
+body > header {
+    margin-top: -25px; 
+}
+
+/*BODY*/
+
 body {
     background-color: #89B762;
     color: white;
+    margin: 0px;
 }
-
-p {
-    color: black;
-    padding-left: 10px;
-}   
+section { overflow: hidden; }
 
 
-.layout { overflow: hidden; }
-.col1 { float: left; width: 300px; }
-.col2 { margin: 0 320px 0 320px; }
-.col3 { width: 300px; float: right; }
+h1, h3, h4{ text-align: center; }
 
-img {width: 200px;}
 
-nav {
+/*LEFT COLUMN*/
+
+nav { 
+    float: left; 
+    width: 300px; 
     padding-left: 10px;
 }
 
-a {
+nav a {
     text-decoration: none;
     color: #8B4A85;
     font-weight: 600;
 }
+
+/*MIDDLE*/
+
+main { margin: 0 320px 0 320px; }
+
+main > article{
+    background-color: #EAEA7B;
+    border-radius: 5px 5px 5px 5px;
+    padding: 1px 5px 1px 5px;
+    font-size: 11pt;
+  }
+.border{
+    height: 10px;
+}
+article > p {
+    color: black;
+    padding-left: 10px;
+}  
+
+article > header, article > footer{
+    margin: 10px 5px 10px 5px;
+    border-radius: 8px;
+}
+
+/*RIGHT COLUMN*/
+
+aside { width: 300px; float: right; }
 
 figure {
     display: inline-block;
     margin: 20px;
   }
 
-figure img { vertical-align: top; }
+figure img { vertical-align: top; width: 200px;}
 
 figure figcaption { text-align: center; }
 
-article{
-    background-color: #EAEA7B;
-    border-radius: 5px 5px 5px 5px;
-    padding: 1px 5px 1px 5px;
-    font-size: 11pt;
-  }
 
-h1, h3, h4{ text-align: center; }
 
-.acticle_header, .acticle_footer{
-    margin: 10px 5px 10px 5px;
-    border-radius: 8px;
-  }
 
-.border{
-    height: 10px;
-}
